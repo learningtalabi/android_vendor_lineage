@@ -1,5 +1,8 @@
-# Allow vendor/extra to override any property by setting it first
+# Orchid os core vendors
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+$(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
@@ -113,8 +116,33 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
     Updater
+    Eleven \
+    Jelly \
+    LockClock \
+    Profiles \
+    TrebuchetQuickStep \
+    Updater \
+    WeatherProvider
+
+# LongShot
+PRODUCT_PACKAGES += \
+    Longshot
+
+# Accents
+PRODUCT_PACKAGES += \
+    LineageBlackTheme \
+    LineageDarkTheme \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageCyanAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
 
 # Themes
 PRODUCT_PACKAGES += \
