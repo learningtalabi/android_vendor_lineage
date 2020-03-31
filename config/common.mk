@@ -141,17 +141,54 @@ PRODUCT_PACKAGES += \
     LineagePurpleAccent \
     LineageRedAccent \
     LineageYellowAccent \
+    Amber \
+    BlueGrey \
+    DeepOrange \
+    DeepPurple \
+    Grey \
+    Indigo \
+    LightBlue \
+    LightGreen \
+    Lime \
+    Teal \
+    White \
+    AospaGreen \
+    AndroidOneGreen \
+    CocaColaRed \
+    DiscordPurple \
+    FacebookBlue \
+    InstagramCerise \
+    JollibeeCrimson \
+    MonsterEnergyGreen \
+    NextbitMint \
+    OneplusRed \
+    PepsiBlue \
+    PocophoneYellow \
+    RazerGreen \
+    SamsungBlue \
+    SpotifyGreen \
+    StarbucksGreen \
+    TwitchPurple \
+    TwitterBlue \
+    XboxGreen \
+    XiaomiOrange
+    SystemAmoledBlack \
+    SystemCharcoalBlack \
+    SystemMidnightBlue
+
+# Themes station
+PRODUCT_PACKAGES += \
     LineageThemesStub \
     ThemePicker
 
-# NavigationBar Gestural Mode No Pill Overlays
+# NavigationBar Overlays
 PRODUCT_PACKAGES += \
     NavBarGesturalNoPillOverlay \
     NavBarGesturalNarrowBackNoPillOverlay \
     NavBarGesturalWideBackNoPillOverlay \
     NavBarGesturalExtraWideBackNoPillOverlay
 
-# Extra tools in Lineage
+# Lineage software tools
 PRODUCT_PACKAGES += \
     7z \
     awk \
