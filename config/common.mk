@@ -116,7 +116,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    Updater
+    Updater \
     Eleven \
     Jelly \
     LockClock \
@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 # LongShot
 PRODUCT_PACKAGES += \
     Longshot
+
+# MarkupGoogle
+PRODUCT_PACKAGES += \
+    MarkupGoogle 
 
 # Accents
 PRODUCT_PACKAGES += \
@@ -275,6 +279,13 @@ else
     LINEAGE_VERSION_MAINTENANCE := 0
 endif
 
+# Markup Google
+PRODUCT_COPY_FILES += \
+    vendor/lineage/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lineage/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+
+
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
@@ -395,3 +406,13 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
+
+# Fonts
+PRODUCT_COPY_FILES += \
+    vendor/lineage/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/lineage/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+    vendor/lineage/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/lineage/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/lineage/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/lineage/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
