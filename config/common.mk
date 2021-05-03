@@ -1,6 +1,6 @@
 # Orchid os core vendors
 $(call inherit-product-if-exists, vendor/extra/product.mk)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 $(call inherit-product-if-exists, vendor/oplauncher/OPLauncher2.mk)
