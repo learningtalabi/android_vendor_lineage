@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/gapps/config.mk)
 $(call inherit-product-if-exists, vendor/prebuilts/prebuilts.mk)
 $(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 $(call inherit-product-if-exists, vendor/oplauncher/OPLauncher2.mk)
-
+include vendor/havoc/config/fonts.mk
 PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -403,5 +403,5 @@ USE_CCACHE := true
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
-
+-include vendor/lineage/config/fonts.mk
 
