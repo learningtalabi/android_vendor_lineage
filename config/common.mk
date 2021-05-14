@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 # Orchidos Rom added applications
 PRODUCT_PACKAGES += \
     MarkupGoogle \
-    stitchimage \
+    StitchImage \
     Longshot
 
 # Accents and Themes 
