@@ -121,15 +121,13 @@ PRODUCT_PACKAGES += \
     Updater \
     WeatherProvider
 
-# LongShot
+# Orchidos Rom added applications
 PRODUCT_PACKAGES += \
+    MarkupGoogle \
+    stitchimage \
     Longshot
 
-# MarkupGoogle
-PRODUCT_PACKAGES += \
-    MarkupGoogle 
-
-# Accents
+# Accents and Themes 
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
     LineageDarkTheme \
@@ -142,10 +140,7 @@ PRODUCT_PACKAGES += \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent
-
-# Themes
-PRODUCT_PACKAGES += \
+    LineageYellowAccent \
     LineageThemesStub \
     ThemePicker
 
@@ -177,7 +172,7 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
-# Xtended Stuff - Copy to System fonts
+# Third Party fonts thank you to xtended rom oneplus and others
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/fonts/gobold/Gobold.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Gobold.ttf \
     vendor/lineage/prebuilt/fonts/gobold/Gobold-Italic.ttf:$(TARGET_COPY_OUT_SYSTEM)/fonts/Gobold-Italic.ttf \
