@@ -171,7 +171,7 @@ PRODUCT_PACKAGES += \
     TwitchPurple \
     TwitterBlue \
     XboxGreen \
-    XiaomiOrange
+    XiaomiOrange \
     SystemAmoledBlack \
     SystemCharcoalBlack \
     SystemMidnightBlue
